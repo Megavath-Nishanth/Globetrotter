@@ -17,7 +17,7 @@ const Game = () => {
 
   const fetchRandomClue = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/destinations/random"); 
+      const response = await axios.get("https://globetrotter-y96c.onrender.com/api/destinations/random"); 
       console.log("API Response:", response.data);
 
       setClue(response.data.clues[Math.floor(Math.random() * response.data.clues.length)]);
@@ -37,7 +37,7 @@ const Game = () => {
     if (!userGuess.trim()) return alert("Please enter a guess!");
 
     try {
-      const response = await axios.post("http://localhost:5000/api/destinations/guess", {
+      const response = await axios.post("https://globetrotter-y96c.onrender.com/api/destinations/guess", {
         id: destinationId,
         userGuess,
       });
