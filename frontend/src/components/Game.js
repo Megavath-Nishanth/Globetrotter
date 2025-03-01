@@ -67,6 +67,7 @@ const Game = () => {
       {showConfetti && <Confetti />}
 
       <div className="game-box">
+        <h1 className="title">The Globetrotter</h1>
         <h2 className="game-title">Guess the City!</h2>
         <p className="game-clue">{clue ? `"${clue}"` : "Loading clue..."}</p>
 

@@ -24,6 +24,12 @@
     margin-bottom: 16px;
   }
   
+  .title{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #4B0082;
+  }
   .game-clue {
     font-size: 18px;
     font-style: italic;
